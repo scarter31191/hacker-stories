@@ -1,4 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#this file lets you app know which file should be igonred all of 
+# this is created by the create-react-app call
+
 
 # dependencies
 /node_modules
