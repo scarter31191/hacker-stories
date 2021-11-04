@@ -1,0 +1,48 @@
+Questions to ask 
+
+lesson 1.2
+
+What is React DOM?
+ReactDOM.render() function uses an HTML node to replace it with JSX. Essentially that's everything needed to integrate React into any application which uses HTML. In more detail, 
+ReactDOM.render() expects two arguments; the first is to render the JSX. It creates an instance of your App component, though it can also pass simple JSX without any component 
+instantiation.
+The second argument specifies where the React application enters your HTML. It expects an element with an id='root', found in the public/index.html file. This is a basic HTML file.
+
+Show Me: Open the public/index.html to see where the React application enters your HTML.
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+What is a component?
+Functional Components: Functional components are simply javascript functions. We can create a functional component in React by writing a javascript function.
+
+Class Components: The class components are a little more complex than the functional components. The functional components are not aware of the other components in your program whereas 
+the class components can work with each other. We can pass data from one class component to other class components. We can use JavaScript ES6 classes to create class-based components in 
+React.
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+component trees:
+
+There is usually one uppermost entry point component (e.g. App) that spans a tree of components below it. The App is the parent component of the List and Search, so the List and Search are 
+child components of the App component and sibling components to each other. 
+
+///////////////////////////////////////////////////////////////////////////////////////////
+lesson 1.3
+
+what are HTML Events?
+They how you handle interaction within your website.
+
+What are Event handlers?
+
+
+What are Event obj's?
+
+
+What casing is used for event names?
+
+
+Synthectic events vs native events
+
+
+What are props?
+
