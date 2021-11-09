@@ -6,7 +6,7 @@ function AddTodoForm(props) {
         const todoEl = document.getElementById('todoTitle');
         const todoTitle = todoEl.value;
         props.onAddTodo(todoTitle)
-        // e.target.reset()
+        e.target.reset()
     }
 
 
@@ -14,7 +14,7 @@ function AddTodoForm(props) {
         <div>
             <form onSubmit={handleAddTodo} >
                 <label htmlFor="todoTitle">Title: </label>
-                <input id="todoTitle" name="title" placeholder="Add Todo..." onChange={handleAddTodo}></input>
+                <input id="todoTitle" name="title" placeholder="Add Todo..." ></input>
                 <button type="submit">Submit</button>
             </form>
         </div>
