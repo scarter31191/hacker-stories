@@ -2,7 +2,17 @@ import React from 'react'
 import { useState } from 'react'
 
 function AddTodoForm(props) {
-    const [todoTitle, settodoTitle] = useState()
+    const [todoTitle, settodoTitle] = useState('')
+
+    // const initialState = {
+    //     title: "",
+    //     id: ""
+    // }
+
+    const todoObject = {
+        title: todoTitle,
+        id: Date.now()
+    }
 
     function handleTitleChange(e) {
         const newTodoTitle = e.target.value
@@ -13,8 +23,8 @@ function AddTodoForm(props) {
         e.preventDefault()
         // const todoEl = document.getElementById('todoTitle');
         // const todoTitle = todoEl.value;
-        props.onAddTodo(todoTitle)
-        e.target.reset()
+        props.onAddTodo(todoObject)
+        settodoTitle('')
     }
 
 
